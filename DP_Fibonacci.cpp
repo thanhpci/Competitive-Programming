@@ -29,6 +29,44 @@ int fibonacci(int n, vector<int> &fib) {
 
 
 
+// int fibonacci2(int n) {
+//     if (n < 0) return 0;
+//     if (n == 1) return 1;
+
+//     vector<int> fib(n + 1, 0);
+//     fib[0] = 0;
+//     fib[1] = 1;
+
+
+//     for (int i = 2; i <= n; i++) {
+//         fib[i] = (fib[i - 1] + fib[i - 2]) % MOD;
+//     }
+
+//     return fib[n];
+// }
+
+
+// int fibonacci3(int n) {
+//     if (n < 1) return 0;
+//     if (n == 1) return 1;
+
+//     int prev1 = 1;
+//     int prev2 = 0;
+//     int cur = 0;
+
+//     for (int i = 2; i <= n; i++) {
+//         cur = (prev1 + prev2)%MOD;
+//         prev2 = prev1;
+//         prev1 = cur;
+       
+//     }
+
+
+//     return cur;
+
+// }
+
+
 
 
 int main() {
@@ -40,7 +78,9 @@ int main() {
     fib[0] = 0;
     fib[1] = 1;
 
-    cout << fibonacci(n, fib);
+    cout << fibonacci(n, fib) << endl;
+    // cout << fibonacci2(n) << endl;
+    // cout << fibonacci3(n) << endl;
 
     return 0;
 
