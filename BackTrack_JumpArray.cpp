@@ -24,11 +24,11 @@ int back_track(vector<int> array) {
 int jumparray(int n, vector<int> array) {
 
 
-    int min_turn = n;
-
-    for (int i = 0; i < n; i++) {
-        back_track(array, min_turn, )
-    }
+//    int min_turn = n;
+//
+//    for (int i = 0; i < n; i++) {
+//        back_track(array, min_turn, )
+//    }
 
 
     return 0;
